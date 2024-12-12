@@ -1,0 +1,5 @@
+^LICENSE\.md
+^\.RData$
+^\.Rhistory$
+^\.Rproj\.user$
+^.*\.Rproj$

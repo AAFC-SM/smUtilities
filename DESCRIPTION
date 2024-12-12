@@ -1,0 +1,15 @@
+Package: smUtilities
+Type: Package
+Title: Sustainability Metrics Utilities
+Version: 0.8
+Author: Liz Eidsness
+Maintainer: Liz Eidsness <liz.eidsness@agr.gc.ca>
+Description: This is for containing a bunch of useful utilities.
+    More can be added over time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    foreign,
+    data.table,
+    openxlsx
+RoxygenNote: 7.2.3
