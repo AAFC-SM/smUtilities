@@ -1,7 +1,7 @@
 Package: smUtilities
 Type: Package
 Title: Sustainability Metrics Utilities
-Version: 0.8
+Version: 0.9
 Author: Liz Eidsness
 Maintainer: Liz Eidsness <liz.eidsness@agr.gc.ca>
 Description: This is for containing a bunch of useful utilities.
@@ -11,5 +11,7 @@ Encoding: UTF-8
 Imports:
     foreign,
     data.table,
-    openxlsx
-RoxygenNote: 7.2.3
+    openxlsx,
+    knitr,
+    glue
+RoxygenNote: 7.3.2
