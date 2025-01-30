@@ -22,6 +22,6 @@ fast_read_csv
 Function to open a file via data.table - faster
 }
 \examples{
-temp1 <- filereader("../../Files/thing.csv")
-temp2 <- filereader(paste0("datapath", "filename"))
+temp1 <- fast_read_csv("../../Files/thing.csv")
+temp2 <- fast_read_csv(paste0("datapath", "filename"))
 }

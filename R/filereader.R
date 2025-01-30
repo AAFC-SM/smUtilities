@@ -32,8 +32,8 @@ filereader <- function(fname) {
 #' @param ... Additional parameters supported by data.table::fread,
 #' @return Data.table for the file
 #' @examples
-#' temp1 <- filereader("../../Files/thing.csv")
-#' temp2 <- filereader(paste0("datapath", "filename"))
+#' temp1 <- fast_read_csv("../../Files/thing.csv")
+#' temp2 <- fast_read_csv(paste0("datapath", "filename"))
 #' @export
 #' @import data.table
 #' @import foreign
