@@ -25,7 +25,7 @@ loadPackages <- function(package_list) {
 #' @import glue
 #' @import knitr
 #' @import tools
-dictionary_to_markdown <- function(dictionary_file) {
+dictionary_to_markdown <- function(dictionary_file, in_file = "") {
   parse_filename <- function(full_path) {
     folder <- dirname(full_path)
     file_with_ext <- basename(full_path)

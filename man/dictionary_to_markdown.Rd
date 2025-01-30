@@ -7,7 +7,7 @@ convert a dictionary file to a markdown document
 for pasting into documentation
 csv only}
 \usage{
-dictionary_to_markdown(dictionary_file)
+dictionary_to_markdown(dictionary_file, in_file = "")
 }
 \arguments{
 \item{dictionary_file}{path to dictionary file}
