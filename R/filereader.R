@@ -4,9 +4,6 @@
 #
 #' @param fname The filename as a string
 #' @return Dataframe for the file
-#' @examples
-#' temp1 <- filereader("../../Files/thing.csv")
-#' temp2 <- filereader(paste0("datapath", "filename"))
 #' @export
 #' @import openxlsx
 #' @import foreign
@@ -26,14 +23,12 @@ filereader <- function(fname) {
 }
 #' fast_read_csv
 #' Function to open a file via data.table - faster
-#
+##'
 #' @param fname The filename as a string
 #' @param data.table  Default (FALSE) Use data.table=TRUE to return a data.table
-#' @param ... Additional parameters supported by data.table::fread,
-#' @return Data.table for the file
-#' @examples
-#' temp1 <- fast_read_csv("../../Files/thing.csv")
-#' temp2 <- fast_read_csv(paste0("datapath", "filename"))
+#' @inheritDotParams data.table::fread
+#' @return Data.table of the input file
+#' @seealso [data.table::fread()] which this function wraps.
 #' @export
 #' @import data.table
 #' @import foreign

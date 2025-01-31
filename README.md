@@ -1,13 +1,22 @@
 # smUtilities
-Utilities helpful to project
+
+R utilities functions helpful to projects
 
 
-Installation
 
-Example use
 
-Building
-* setting version
-* inline documentation
-* updating NAMESPACE with imports and exports
-* doxygen2 ```roxygen2::roxygenise()```
+## Installation
+This can be installed directly from gitlab using remotes
+```R
+remotes::install_github("AAFC-SM/smUtilities")
+```
+
+More information from [remotes package](https://remotes.r-lib.org/)
+
+
+
+## Building documentation and testing locally
+This will work locally in R environment.
+* increment version - DESCRIPTION
+* inline documentation with functions
+* run doxygen2 ```roxygen2::roxygenise()```

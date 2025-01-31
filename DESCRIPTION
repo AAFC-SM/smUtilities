@@ -1,7 +1,7 @@
 Package: smUtilities
 Type: Package
 Title: Sustainability Metrics Utilities
-Version: 0.9.1
+Version: 0.9.2
 Author: Liz Eidsness
 Maintainer: Liz Eidsness <liz.eidsness@agr.gc.ca>
 Description: This is for containing a bunch of useful utilities.
