@@ -11,6 +11,8 @@ dictionary_to_markdown(dictionary_file, in_file = "")
 }
 \arguments{
 \item{dictionary_file}{path to dictionary file}
+
+\item{in_file}{(optional) path to original data file}
 }
 \description{
 columns expected: COLUMN,TYPE,DESCRIPTION

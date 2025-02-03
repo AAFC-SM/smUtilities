@@ -19,6 +19,7 @@ loadPackages <- function(package_list) {
 #' columns expected: COLUMN,TYPE,DESCRIPTION
 #'
 #' @param dictionary_file path to dictionary file
+#' @param in_file (optional) path to original data file
 #' @examples
 #' dictionary_to_markdown("../../my_data_dict.csv")
 #' @export
