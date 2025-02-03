@@ -43,7 +43,7 @@ dictionary_to_markdown <- function(dictionary_file, in_file = "") {
   description_dict <- fast_read_csv(dictionary_file)
 
   output <- parse_filename(dictionary_file)
-  out_file <- glue::glue("{output$filename}.md")
+  out_file <- glue::glue("{output$filename}_dict.md")
   out_folder <- output$folder
 
   writeLines(
