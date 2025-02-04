@@ -9,6 +9,8 @@ remotes::install_github("AAFC-SM/smUtilities")
 ```
 
 ## Usage
+* [create_dictionary.md](docs/create_dictionary.md)
+* [dictionaries_to_singlepage.md](docs/dictionaries_to_singlepage.md)
 * [dictionary_to_markdown.md](docs/dictionary_to_markdown.md)
 * [dropcolumns.md](docs/dropcolumns.md)
 * [fast_read_csv.md](docs/fast_read_csv.md)
@@ -16,6 +18,7 @@ remotes::install_github("AAFC-SM/smUtilities")
 * [keepcolumns.md](docs/keepcolumns.md)
 * [loadPackages.md](docs/loadPackages.md)
 * [pkg_rd2markdown.md](docs/pkg_rd2markdown.md)
+* [write_csv_withpath.md](docs/write_csv_withpath.md)
 
 
 ## Building documentation and testing locally
