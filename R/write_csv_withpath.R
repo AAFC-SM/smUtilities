@@ -8,15 +8,29 @@
 #' temp1 <- write_csv_withpath(df, "../../Files/thing.csv")
 #' @export
 #' @import data.table
-write_csv_withpath <- function(df, fname, ...) {
+write_csv_withpath <- function(df, fname, atomic = FALSE, ...) {
   dir_path <- dirname(fname)
   file_path <- basename(fname)
 
-  p <- file.path(dir_path)
-  if (dir.exists(p) == FALSE) {
-    dir.create(p, recursive = TRUE)
+  # Ensure directory exists
+  if (!dir.exists(dir_path)) {
+    dir.create(dir_path, recursive = TRUE)
   }
-  return(
+
+  if (atomic) {
+    # Create a temporary file in the same directory
+    temp_file <- tempfile(pattern = "temp_", tmpdir = dir_path)
+
+    # Write to the temporary file first
+    data.table::fwrite(df, temp_file, ...)
+
+    # Atomically rename the temporary file to the target filename
+    file.rename(temp_file, fname)
+
+  } else {
     data.table::fwrite(df, fname, ...)
-  )
+  }
+  
+  return(invisible(fname))
+
 }
